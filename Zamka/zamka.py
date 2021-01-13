@@ -22,5 +22,3 @@ N = max(ans)
 
 print(M)
 print(N)
-    
-     
