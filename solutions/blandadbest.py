@@ -1,0 +1,1 @@
+input() and input() and print("blandad best") if int(input()) == 2 else print(input())
