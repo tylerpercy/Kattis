@@ -1,0 +1,1 @@
+print("yup") if ((x := input()) == "OCT 31" or x == "DEC 25") else print("nope")
