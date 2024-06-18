@@ -1,5 +1,3 @@
-from collections import Counter
-
 n, m = [int(x) for x in input().split()]
 
 odds = []
