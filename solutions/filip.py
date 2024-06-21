@@ -1,0 +1,1 @@
+print(max([int(str(x)[::-1]) for x in input().split()]))
