@@ -1,0 +1,1 @@
+print("Neibb") if (c := input().lower()) in "bcdfghjklmnpqrstvwxz" else print("Jebb") if c in "aeiou" else print ("Kannski")
