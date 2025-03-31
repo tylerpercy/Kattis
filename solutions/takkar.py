@@ -1,0 +1,1 @@
+[print("FAKE NEWS!") if (a := int(input())) < (b := int(input())) else print("MAGA!") if a > b else print("WORLD WAR 3!")]
