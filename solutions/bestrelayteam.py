@@ -1,8 +1,35 @@
-l = []
-for _ in range(int(input())):
-    n, a1, ai = (lambda x: (x[0], float(x[1]), float(x[2])))(input().split())
-    l.append([n, a1, ai])
 
-l.sort(key = lambda x: x[2])
+	
+first = []
+rest = []
 
-print(l)
+for i in range(int(input())):
+	
+	tmp = input().split()
+	first.append((float(tmp[1]), tmp[0]))
+	rest.append((float(tmp[2]), tmp[0]))
+
+first = sorted(first)[:4]
+rest = sorted(rest)[:4]
+attempts = []
+
+for time, person in first:
+	
+	people = [person]
+	i = 0
+	
+	while len(people) != 4:
+		if rest[i][1] != person:
+			
+			people.append(rest[i][1])
+			time += rest[i][0]	
+		i += 1
+
+	attempts.append((time, people))
+
+attempts = sorted(attempts)
+
+print(attempts[0][0])
+
+for person in attempts[0][1]:
+	print(person)
